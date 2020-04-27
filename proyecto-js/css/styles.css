@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#global {
+    width: 65%;
+    margin: 30px auto;
+    /* margin-top: 30px; */
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 2px #ccc;
+}
+
+#logo {
+    font-family: Verdana, Arial;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#menu {
+    font-family: Helvetica, Arial;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#menu ul li {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    transition: all 300ms;
+}
+
+#menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#posts {
+    width: 60%;
+    font-family: Helvetica, Arial;
+}
+
+.post h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.post {
+    margin: 20px 0;
+}
+
+.post .date {
+    display: block;
+    color: #808080;
+    margin-top: 5px;
+}
+
+.post p {
+    margin: 20px 0;
+    line-height: 22px;
+    text-align: justify;
+}
+
+#btn-more {
+    font-size: 14px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sidebar {
+    font-family: Helvetica, Arial;
+    width: 30%;
+}
+
+#sidebar h4 {
+    margin: 50px 0 20px 0;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x;
+}
+
+#sidebar h4 span {
+    background: #fff;
+    padding: 5px;
+}
+
+#sidebar img {
+    width: 100%;
+}
+
+#sidebar p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 5px 0 10px 0;
+}
+
+form input[type="submit"] {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.7);
+    margin: 0 auto;
+    width: 65%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 250px !important;
+}
