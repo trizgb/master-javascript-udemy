@@ -69,9 +69,10 @@
     font-family: Helvetica, Arial;
 }
 
-.post h2 {
+h2 {
     font-size: 30px;
     color: #333;
+    font-family: Helvetica, Arial;
 }
 
 .post {
@@ -131,7 +132,9 @@
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form input[type="number"],
+select {
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -156,10 +159,102 @@ footer {
     width: 65%;
     padding: 0 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bx-wrapper,
+.bx-viewport {
+    height: 250px !important;
+}
+
+#selector-theme {
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+#to-green {
+    background: #235e3d;
+}
+
+#to-red {
+    background: #ca3413;
+}
+
+#to-blue {
+    background: #1f87c4;
+}
+
+.go-up {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#box {
+    width: 60%;
+    margin-top: 40px;
+}
+
+#accordion {
+    margin-top: 20px;
+}
+
+#clock {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: #333;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bx-wrapper, .bx-viewport {
-    height: 250px !important;
+#form-contact {
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+
+}
+
+#form-contact label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-error {
+    color: #B94A48;
+    border: 1px solid #B94A48;
+    background-color: #F2DEDE;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-error ul {
+    /* list-style: none; */
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.form-error li {
+    margin-bottom: 5px;
 }

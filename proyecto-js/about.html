@@ -12,14 +12,12 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="./js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <!-- MomentJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
 </head>
 
 <body>
@@ -43,18 +41,35 @@
                 </ul>
             </nav>
         </header>
-        <!-- Slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="./img/hojas.jpg" title="Hojas"></div>
-                <div><img src="./img/rojo.jpg" title="Rojo"></div>
-                <div><img src="./img/cielo.jpg" title="Cielo"></div>
-            </div>
-        </div>
         <!-- Contenido -->
         <section id="content">
-            <div id="posts">
-                <!-- Cargar posts desde json -->
+            <div id="box">
+                <!-- Cargar acordeon -->
+                <h2>Sobre mí</h2>
+                <div id="accordion">
+                    <h3>Quiénes soy</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perferendis doloribus
+                            reprehenderit.
+                        </p>
+                    </div>
+                    <h3>Servicios</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perferendis doloribus
+                            reprehenderit.
+                        </p>
+                    </div>
+                    <h3>Clientes</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perferendis doloribus
+                            reprehenderit.
+                        </p>
+                    </div>
+
+                </div>
             </div>
             <aside id="sidebar">
                 <div id="about">
