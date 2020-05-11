@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { ExternoComponent } from './externo/externo.component';
 
 // Array de rutas
 const appRoutes: Routes = [
@@ -15,7 +16,10 @@ const appRoutes: Routes = [
   { path: 'zapatillas', component: ZapatillasComponent },
   { path: 'videojuegos', component: VideojuegoComponent },
   { path: 'cursos', component: CursosComponent },
-  { path: '**', component: HomeComponent}
+  { path: 'cursos/:nombre', component: CursosComponent },
+  { path: 'cursos/:nombre/:followers', component: CursosComponent },
+  { path: 'externo', component: ExternoComponent },
+  { path: '**', component: HomeComponent }
 ]
 
 // Export modulo router

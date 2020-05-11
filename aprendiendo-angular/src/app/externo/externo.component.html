@@ -1,0 +1,13 @@
+<p>{{date | date:'fullDate' | uppercase}}</p>
+{{4 | calculadora: 2}}
+<hr>
+<input type="text" [(ngModel)]="userId" (keyup.enter)="loadUser()">
+
+<div *ngIf="!user">
+  Cargando...
+</div>
+
+<div *ngIf="user">
+  <h2>{{user.first_name}} {{user.last_name}}</h2>
+  <img src="{{user.avatar}}" width="200">
+</div>
