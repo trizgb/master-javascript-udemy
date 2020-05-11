@@ -7,10 +7,17 @@
   <h1>Bienvenido a {{title}}!</h1>
   <p>{{descripcion}}</p>
 
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
+    <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">Zapatillas</a>
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    <a [routerLink]="['/videojuegos']" [routerLinkActive]="['active']">Videojuegos</a>
+  </nav>
   <!-- <button (click)="ocultarVideojuegos(false)" *ngIf="mostrarVideojuegos">Ocultar</button> -->
   <!-- <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrarVideojuegos">Mostrar</button> -->
-
   <!-- <videojuego *ngIf="mostrarVideojuegos"></videojuego> -->
-  <zapatillas></zapatillas>
+  <!-- <zapatillas></zapatillas> -->
   <!-- <cursos></cursos> -->
+
+  <router-outlet></router-outlet>
 </div>
