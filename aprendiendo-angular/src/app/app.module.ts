@@ -6,12 +6,13 @@ import { routing, appRoutingProviders } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { VideojuegoComponent } from './videojuego/videojuego.component';
-import { ZapatillasComponent } from './zapatillas/zapatillas.component';
-import { CursosComponent } from './cursos/cursos.component';
-import { HomeComponent } from './home/home.component';
-import { ExternoComponent } from './externo/externo.component';
+import { VideojuegoComponent } from './components/videojuego/videojuego.component';
+import { ZapatillasComponent } from './components/zapatillas/zapatillas.component';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { HomeComponent } from './components/home/home.component';
+import { ExternoComponent } from './components/externo/externo.component';
 import { CalculadoraPipe } from './pipes/calculadora.pipe';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CalculadoraPipe } from './pipes/calculadora.pipe';
     CursosComponent,
     HomeComponent,
     ExternoComponent,
-    CalculadoraPipe
+    CalculadoraPipe,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Zapatilla } from '../models/zapatilla';
-import { ZapatillasService } from '../services/zapatillas.service';
+import { Zapatilla } from '../../models/zapatilla';
+import { ZapatillasService } from '../../services/zapatillas.service';
 
 
 @Component({
