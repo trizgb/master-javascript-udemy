@@ -90,7 +90,7 @@ header a:hover,
 /*Contenedor principal*/
 
 #content {
-  min-height: 600px;
+  min-height: 100vh;
   height: auto;
   width: 75%;
   margin: 0px auto;
@@ -98,7 +98,7 @@ header a:hover,
   border-left: 1px solid #b7b7b7;
   border-right: 1px solid #b7b7b7;
   background: rgba(255, 255, 255, 0.7);
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 /*Pie de pagina*/
@@ -112,8 +112,36 @@ footer {
 /*About Component*/
 @import "../app/components/about/about.component.scss";
 
-/*Form - Create Component*/
+/*Form - Create Component - Detail Component*/
 @import "../app/components/create/create.component.scss";
+
+
+.container {
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.container .image {
+  float: left;
+  width: 47%;
+}
+
+.container .image img {
+  width: 100%;
+}
+
+.container .data {
+  float: left;
+  width: 40%;
+  margin-left: 30px;
+}
+
+.container h2 {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
 
 /*Projects Component*/
 @import "../app/components/projects/projects.component.scss";
