@@ -1,0 +1,25 @@
+.project {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.project .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100px;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+}
