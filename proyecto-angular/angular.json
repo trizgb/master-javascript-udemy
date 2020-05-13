@@ -28,14 +28,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles.scss"
+              "src/assets/styles.scss",
+              "node_modules/bxslider/dist/jquery.bxslider.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/assets"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bxslider/dist/jquery-3.1.1.min.js",
+              "node_modules/bxslider/dist/jquery.bxslider.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -128,6 +133,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "proyecto-angular"
 }
